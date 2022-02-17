@@ -7,7 +7,7 @@ function showTime() {
     var period = "";
     var time = "";
 
-    period = (h < 12 && h > 5) ? "Bm Dia!" : (h > 11 && h < 16) ? "Boa Tarde!" : (h > 15 && h > 0) ? "Boa Noite" : "Boa Madrugada!";
+    period = (h < 12 && h > 5) ? "<div>⛅️</div>Bm Dia!" : (h > 11 && h < 18) ? "<div>☀️</div>Boa Tarde!" : (h > 17 && h > 0) ? "<div>🌙</div>Boa Noite!" : "<div>🌒</div>Boa Madrugada!";
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
